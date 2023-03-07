@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listItem {
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.listItem:hover {
+  color: var(--orange);
+}
+
+.listItem svg {
+  margin-right: 5px;
+  vertical-align: middle;
+  
+}
+
+.listItem svg path {
+  transition: fill .3s ease;
+}
+
+.listItem:hover svg path {
+  fill: var(--orange);
+}

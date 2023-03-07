@@ -1,0 +1,36 @@
+/* .i20 {
+  width: 5px;
+  height: 20px;
+}
+
+.i12 {
+  width: 12px;
+  height: 14px
+}
+
+.i14 {
+  width: 14px;
+  height: 14px
+}
+
+.i15 {
+  width: 15px;
+  height: 15px
+}
+
+.i16 {
+  width: 16px;
+  height: 14px;
+}
+
+@media all and (min-width: 320px) and (max-width: 1023px) {
+  .mi12 {
+    width: 12px;
+    height: 12px;
+  }
+
+  .mi14 {
+    width: 14px;
+    height: 12px;
+  }
+} */

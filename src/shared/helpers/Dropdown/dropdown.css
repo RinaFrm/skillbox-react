@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  flex: 1 1 0%;
+  position: absolute;
+}
+
+.listContainer {
+  position: relative;
+}
+
+.list {
+  background-color: var(--white);
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.listButton {
+  height: 39px;
+  width: 157px;
+  background-color: var(--greyD9);
+  margin-right: -20px;
+  margin-left: -20px;
+  text-align: center;
+  color: var(--grey66);
+  transition: color .3s ease;
+}
+
+.listButton:hover {
+  color: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+  .list {
+    left: -60px;
+    top: 19px;
+    width: 157px;
+    height: 229px;
+  }
+}

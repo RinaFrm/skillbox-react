@@ -1,0 +1,35 @@
+
+.listItem {
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--greyEC);
+  transition: color .3s ease;
+}
+
+.listItem:hover {
+  color: var(--orange);
+}
+
+.listItem svg {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.listItem svg path {
+  transition: fill .3s ease;
+}
+
+.listItem:hover svg path {
+  fill: var(--orange);
+}
+
+@media (max-width: 1023px) {
+  .listItem:nth-child(1), .listItem:nth-child(2), .listItem:nth-child(4) {
+    display: none
+  }
+}
+
