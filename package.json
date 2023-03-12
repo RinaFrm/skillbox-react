@@ -5,7 +5,7 @@
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://github.com/RinaFrm/skillbox-react",
+  "homepage": "https://rinafrm.github.io/skillbox-react/",
   "main": "index.js",
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",
@@ -65,7 +65,7 @@
     "test": "jest",
     "start": "env CLIENT_ID=fbNtO7IIO3ytjP_ONXggMA SECRET=6HcKAN5xwKoP1VwUiGR1bStv3Xd01A node ./dist/server/server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "author": "",
   "license": "ISC"
