@@ -7,10 +7,11 @@ import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './store/reducer';
 import thunk from 'redux-thunk';
-import { BrowserRouter } from 'react-router-dom';
+//import { BrowserRouter } from 'react-router-dom';
 import { Header } from './shared/Layout/Header';
 import { Content } from './shared/Layout/Content';
 import { saveToken } from './store/token/tokenActions';
+import { HashRouter } from 'react-router-dom';
 
 const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(thunk)
@@ -36,12 +37,14 @@ function AppComponent() {
   return (
     <Provider store={store}>
       {mounted && (
-        <BrowserRouter>
+        //<BrowserRouter>
+        <HashRouter>
           <Layout>
             <Header/>
             <Content/>
           </Layout>
-        </BrowserRouter>
+        </HashRouter>
+        //</BrowserRouter>
       )}  
     </Provider>
   )
